@@ -40,7 +40,7 @@ export class Form extends Component {
 			<form onSubmit={this.handleSubmit}>
 				<div>
 					<label>Company</label>
-					<input type="text" value={this.state.companyname} onChange={this.handleCompanyNameChange}/>
+					<input className="form-control" type="text" value={this.state.companyname} onChange={this.handleCompanyNameChange}/>
 				</div>
 				
 				<div>

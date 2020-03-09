@@ -5,12 +5,8 @@ import { NewsAPI } from './components/NewsAPI.js'
 
 function App() {
   return (
-    <div className="App">
-
-
-
-
-    </div>
+    <NewsAPI>
+    </NewsAPI>
   );
 }
 

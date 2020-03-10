@@ -16,6 +16,9 @@ function Nav() {
 				<Link to='/news'>
 				<li>News</li>
 				</Link>
+				<Link to='/alexa'>
+				<li>Alexa</li>
+				</Link>
 			</ul>
 		</nav>
 

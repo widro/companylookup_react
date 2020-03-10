@@ -9,6 +9,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import Nav from './components/Nav.js';
 import { Form } from './components/Form.js';
 import { NewsAPI } from './components/NewsAPI.js';
+import { AlexaAPI } from './components/AlexaAPI.js';
 
 
 
@@ -27,6 +28,7 @@ function App() {
 				<Route path="/" exact component={Home} />
 				<Route path="/form" component={Form} />
 				<Route path="/news" component={NewsAPI} />
+				<Route path="/alexa" component={AlexaAPI} />
 				</Switch>
         	</Row>
         </Container>

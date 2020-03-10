@@ -1,20 +1,30 @@
-import React, {useState, userEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../App.css';
 
-export class AlexaAPI extends React.Component{
+function AlexaAPI() {
 
-	async componentDidMount() {
-		const data = await fetch('https://fornite-public-api.theapinetwork.com/prod09/upcoming/get');
-		console.log(data)
 
-	}
+	useEffect(() => {
+		fetchItems();
+	}, []);
 
-	render() {
-		return (
-			<div>
-				<h1>Alexa API</h1>
-			</div>
+
+	const fetchItems = async () => {
+		const data = await fetch(
+			'https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get'
 		);
+		const items = await data.json();
+		console.log(items);
+
 	}
+
+	return (
+		<div>
+			<h1>Alexa API</h1>
+		</div>
+	);
+	
 }
 
+
+export default AlexaAPI;

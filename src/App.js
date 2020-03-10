@@ -9,7 +9,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import Nav from './components/Nav.js';
 import { Form } from './components/Form.js';
 import { NewsAPI } from './components/NewsAPI.js';
-import { AlexaAPI } from './components/AlexaAPI.js';
+import AlexaAPI from './components/AlexaAPI.js';
 
 
 

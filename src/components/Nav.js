@@ -1,18 +1,25 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 
 
 function Nav() {
-  return (
-    <nav>
-    	<h3>Logo</h3>
-    	<ul>
-    		<li>Form</li>
-    		<li>News</li>
-    	</ul>
-    </nav>
+	return (
+		<nav>
+			<ul>
+				<Link to='/'>
+				<li>Home</li>
+				</Link>
+				<Link to='/form'>
+				<li>Form</li>
+				</Link>
+				<Link to='/news'>
+				<li>News</li>
+				</Link>
+			</ul>
+		</nav>
 
-  );
+	);
 }
 
-export default App;
+export default Nav;

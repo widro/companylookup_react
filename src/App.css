@@ -5,3 +5,24 @@ body{
 div.container{
   background:#fff;
 }
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height:30px;
+  background:#333;
+  color:#eee;
+  width:100%;
+}
+
+li{
+  float:left;
+  display:block;
+  padding:10px;
+  list-style:none;
+  color:#ff0000;
+}
+
+

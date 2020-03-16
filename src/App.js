@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {Container, Row, Col} from 'react-bootstrap';
 
 import Nav from './components/Nav.js';
-import NavInput from './components/NavInput.js';
+import { NavInput } from './components/NavInput.js';
 import { Form } from './components/Form.js';
 import { NewsAPI } from './components/NewsAPI.js';
 import AlexaAPI from './components/AlexaAPI.js';

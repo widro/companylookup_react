@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
+import NavInput from './NavInput.js';
 
 
 function Nav() {
@@ -19,6 +20,7 @@ function Nav() {
 				<Link to='/alexa'>
 				<li>Alexa</li>
 				</Link>
+				<NavInput />
 			</ul>
 		</nav>
 

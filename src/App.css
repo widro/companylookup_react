@@ -18,6 +18,17 @@ nav{
   width:100%;
 }
 
+div.NavInput{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height:30px;
+  background:#333;
+  color:#eee;
+  width:100%;
+  padding:20px;
+}
+
 li{
   float:left;
   display:block;

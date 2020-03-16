@@ -16,6 +16,8 @@ import { createStore } from 'redux';
 
 const initialState = {
 	result: 1, 
+	companyname: 'nintendo', 
+	personname: 'steve jobs', 
 	lastValues: []
 };
 
@@ -61,13 +63,15 @@ store.dispatch({
 	type: "SUBTRACT",
 	payload: 80
 });
-
 function App() {
   return (
   	<Router>
         <Container>
         	<Row>
         		<Nav />
+        	</Row>
+        	<Row>
+        		<NavInput />
         	</Row>
         	<Row>
         		<Switch>

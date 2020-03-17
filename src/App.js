@@ -10,9 +10,9 @@ import Nav from './components/Nav.js';
 import { NavInput } from './components/NavInput.js';
 import { Form } from './components/Form.js';
 import { NewsAPI } from './components/NewsAPI.js';
+import { Patent } from './components/Patent.js';
 import { Backend } from './components/Backend.js';
 import AlexaAPI from './components/AlexaAPI.js';
-import Patent from './components/Patent.js';
 
 import { createStore } from 'redux';
 

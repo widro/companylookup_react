@@ -12,23 +12,11 @@ function AlexaAPI() {
 
 
 	const fetchItems = async () => {
-		const url = "https://awis.api.alexa.com/api?Action=urlInfo&ResponseGroup=Rank&Url=nintendo.com";
-		const data = await fetch(url, { 
-								   method: 'post', 
-								   headers: new Headers({
-								     'Authorization': 'AWS4-HMAC-SHA256', 
-								     'Credential': 'AWS4-HMAC-SHA256', 
-								     'Type': 'application/xml', 
-								     'X-Amz-Date': 'AWS4-HMAC-SHA256', 
-								     'x-api-key': 'AWS4-HMAC-SHA256', 
-								     'x-amz-security-token': 'application/xml'
-								   })
-								 });
-
-
-		const items = await data.json();
-		console.log(items.articles);
-		setItems(items.articles);
+		//const url = "https://newsapi.org/v2/everything?apiKey=fcaf9015343540eda93767f8c306a3b1&language=en&sortBy=relevancy&from=2018-01-10&q=nintendo";
+		//const data = await fetch(url);
+		//const items = await data.json();
+		//console.log(items.articles);
+		//setItems(items.articles);
 
 	}
 

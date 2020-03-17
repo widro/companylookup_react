@@ -10,6 +10,7 @@ import Nav from './components/Nav.js';
 import { NavInput } from './components/NavInput.js';
 import { Form } from './components/Form.js';
 import { NewsAPI } from './components/NewsAPI.js';
+import { Backend } from './components/Backend.js';
 import AlexaAPI from './components/AlexaAPI.js';
 
 import { createStore } from 'redux';
@@ -79,6 +80,7 @@ function App() {
 				<Route path="/form" component={Form} />
 				<Route path="/news" component={NewsAPI} />
 				<Route path="/alexa" component={AlexaAPI} />
+				<Route path="/backend" component={Backend} />
 				</Switch>
         	</Row>
         </Container>
@@ -89,6 +91,10 @@ function App() {
 const Home = () => (
 	<div>
 		<h1>Home Page</h1>
+
+		<button type="button" className="form-control btn-primary">Target Look Up</button>
+		<br/><br/>
+		<button type="button" className="form-control btn-primary">Potential Client Search</button>
 	</div>
 );
 

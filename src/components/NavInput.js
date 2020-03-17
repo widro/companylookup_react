@@ -7,6 +7,8 @@ export class NavInput extends Component {
 		this.state = {
 			companyname: '',
 			personname:'',
+			email:'',
+			website:'',
 		}
 	}
 
@@ -22,10 +24,22 @@ export class NavInput extends Component {
 		});
 	}
 
+	handleEmailChange = (event) => {
+		this.setState({
+			email: event.target.value
+		});
+	}
+
+	handleWebsiteChange = (event) => {
+		this.setState({
+			website: event.target.value
+		});
+	}
+
 
 
 	handleSubmit = (event) => {
-		alert(`${this.state.companyname} ${this.state.personname}`);
+		alert(`${this.state.companyname} ${this.state.personname} ${this.state.email} ${this.state.website}`);
 
 		event.preventDefault();
 	}
@@ -34,11 +48,17 @@ export class NavInput extends Component {
 		return(
 		<form onSubmit={this.handleSubmit}>
 			<div className="NavInput">
-				<div className="col-lg-5">
+				<div className="col-lg-2">
 					<input placeholder="Company Name" className="form-control" type="text" value={this.state.companyname} onChange={this.handleCompanyNameChange} />
 				</div>
-				<div className="col-lg-5">
+				<div className="col-lg-2">
 					<input placeholder="Person Name" className="form-control" type="text" value={this.state.personname} onChange={this.handlePersonNameChange} />
+				</div>
+				<div className="col-lg-2">
+					<input placeholder="Email" className="form-control" type="text" value={this.state.email} onChange={this.handleEmailChange} />
+				</div>
+				<div className="col-lg-2">
+					<input placeholder="Website" className="form-control" type="text" value={this.state.website} onChange={this.handleWebsiteChange} />
 				</div>
 				<div className="col-lg-2">
 					<button type="submit" className="form-control btn-primary">Update</button>

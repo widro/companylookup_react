@@ -6,20 +6,6 @@ export class NewsAPI extends React.Component{
 		article: null,
 	};
 
-	generatematchrow(content, n, matchnumber){
-		var endtext2;
-		var endtextextend = content.substring(n+200);
-
-		var n2a = endtextextend.indexOf('.')
-		if(n2a>0){
-			endtext2 = endtextextend.substring(0, n2a);
-		}
-
-		var contentwithmatch = content.substring(n, n-200) + content.substring(n, n+200) + endtext2 + " ";
-
-		return contentwithmatch;
-	}
-
 
 
 	async componentDidMount() {

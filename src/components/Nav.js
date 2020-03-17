@@ -19,6 +19,9 @@ function Nav() {
 				<Link to='/alexa'>
 				<li>Alexa</li>
 				</Link>
+				<Link to='/backend'>
+				<li>Backend</li>
+				</Link>
 			</ul>
 		</nav>
 

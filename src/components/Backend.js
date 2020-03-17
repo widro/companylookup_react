@@ -21,8 +21,24 @@ export class Backend extends React.Component{
 	}
 
 	async componentDidMount() {
-		const url = "https://newsapi.org/v2/everything?apiKey=fcaf9015343540eda93767f8c306a3b1&language=en&sortBy=relevancy&from=2018-01-10&q=nintendo";
-		const response = await fetch(url);
+		const url = "https://waldenfarms.panosdev.com/companylookup_api.php";
+
+		const obj = {
+			"scraper_companyname": "sega"
+			};
+
+		//const response = await fetch(url);
+		const response = await fetch(url, {
+		    method: 'POST',
+		    headers: {
+		      'Accept': 'application/json',
+		      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+		    },
+			body: JSON.stringify(obj)
+		  });
+ 
+
+
 		const data = await response.json();
 		this.setState({responsejson: data, loading:false});
 		console.log(data);
@@ -33,7 +49,7 @@ export class Backend extends React.Component{
 			<div>
 				{this.state.loading || !this.state.responsejson ? <div>loading...</div> : (
 					<div>
-						<div>{this.state.responsejson}</div>
+						<div>{this.state.responsejson.finalanswer}</div>
 					</div>)
 			}
 			</div>

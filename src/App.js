@@ -12,6 +12,7 @@ import { Form } from './components/Form.js';
 import { NewsAPI } from './components/NewsAPI.js';
 import { Backend } from './components/Backend.js';
 import AlexaAPI from './components/AlexaAPI.js';
+import Patent from './components/Patent.js';
 
 import { createStore } from 'redux';
 
@@ -80,6 +81,7 @@ function App() {
 				<Route path="/form" component={Form} />
 				<Route path="/news" component={NewsAPI} />
 				<Route path="/alexa" component={AlexaAPI} />
+				<Route path="/patent" component={Patent} />
 				<Route path="/backend" component={Backend} />
 				</Switch>
         	</Row>

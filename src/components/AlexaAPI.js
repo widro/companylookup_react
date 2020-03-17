@@ -21,7 +21,7 @@ function AlexaAPI() {
 								     'Type': 'application/xml', 
 								     'X-Amz-Date': 'AWS4-HMAC-SHA256', 
 								     'x-api-key': 'AWS4-HMAC-SHA256', 
-								     'Content-Type': 'application/xml'
+								     'x-amz-security-token': 'application/xml'
 								   })
 								 });
 
